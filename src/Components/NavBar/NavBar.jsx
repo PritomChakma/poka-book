@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const links = (
-    <div className="lg:flex gap-5">
+    <div className="lg:flex gap-5 items-center">
       <li>
         <NavLink to="/">Home</NavLink>
       </li>
