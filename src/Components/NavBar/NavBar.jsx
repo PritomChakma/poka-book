@@ -6,7 +6,10 @@ const NavBar = () => {
       <li>
         <NavLink to="/">Home</NavLink>
       </li>
-      <li>Listed Books</li>
+      <li>
+        <NavLink to="/listedBooks">Listed Books</NavLink>
+      </li>
+
       <li>Pages to Read</li>
     </div>
   );

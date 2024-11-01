@@ -6,7 +6,6 @@ const BookDetails = () => {
   const { bookId } = useParams();
   const data = useLoaderData();
   const id = parseInt(bookId);
-  console.log(typeof id);
 
   const book = data.find((book) => book.bookId === id);
   console.log(book);
@@ -30,6 +29,7 @@ const BookDetails = () => {
 
   const handleWishList = (id) => {
     addSoterWishList(id);
+    console.log(handleMarkAsRead);
   };
   return (
     <div className="hero ">
@@ -78,7 +78,7 @@ const BookDetails = () => {
             </p>
           </div>
           <div className="flex mt-3 gap-3">
-            <button onClick={() => handleMarkAsRead(bookId)} className="btn">
+            <button onClick={() => handleMarkAsRead(id)} className="btn">
               Mark as Read
             </button>
             <button

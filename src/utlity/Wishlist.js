@@ -18,4 +18,4 @@ const addSoterWishList = (id) => {
     localStorage.setItem("Wish list", localStorageStr);
   }
 };
-export { addSoterWishList };
+export { addSoterWishList, getStoreWishList };
